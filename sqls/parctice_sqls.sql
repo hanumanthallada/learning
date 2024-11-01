@@ -37,3 +37,6 @@ delete from emp_boss;
 select e1.EMPNO,e1.empname as emp_name, e2.empname as Mgr_name from emp_boss e1, emp_boss e2 where e1.mgrno = e2.EMPNo;
 
 select e1.EMPNO,e1.empname from emp_boss e1 where e1.mgrno is null;
+
+SELECT sysdate, TO_CHAR(sysdate, 'DD-MON-YYYY HH24:MI:SS'), TO_DATE('11-01-2024', 'MM-DD-YYYY') from dual;
+select sysdate from dual;
